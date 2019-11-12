@@ -43,12 +43,7 @@ class QuickSort(object):
             return self.arr
         else:
             return ("wrong array")
-
-    def reverse(self):
-        bufarr = self.arr
-        for i in range (0, len(bufarr)):
-            self.arr[i] = bufarr[len(bufarr) - i]
-
+        
     def CountBigO(self):
         return("n * n")
 
@@ -132,13 +127,6 @@ class MergeSort(object) :
         else:
             print("wrong array")
 
-    def reverse(self):
-        """reverse list 
-        """
-        bufarr = self.arr
-        for i in range (0, len(bufarr)):
-            self.arr[i] = bufarr[len(bufarr) - i]
-
     def CountBigO(self):
         return("n * log2(n)")
     
@@ -199,13 +187,6 @@ class RadixSort(object):
         else:
             print("wrong array")
 
-    def reverse(self):
-        """reverse array
-        """
-        bufarr = self.arr
-        for i in range (0, len(bufarr)):
-            self.arr[i] = bufarr[len(bufarr) - i]
-
     def CountBigO(self):
         return("n")
     def Check(self):
@@ -214,13 +195,3 @@ class RadixSort(object):
             if(not str.isdigit(arr[i])):
                 flag = True
         return flag
-
-
-array = [14,554,134,653,234,4,2,34,5,90] 
-n = len(array) 
-arr = QuickSort(array).start()
-#arr = MergeSort(array).start().reverse()
-#arr = QuickSort(array).start().reverse()
-print ("Sorted array is:") 
-for i in range(n): 
-    print (arr[i])
