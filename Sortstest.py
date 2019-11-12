@@ -133,7 +133,14 @@ class MergeSort(object) :
 
     def CountBigO(self):
         return("n * log2(n)")
-    
+
+    def reverse(self):
+        """reverse list 
+        """
+        bufarr = self.arr
+        for i in range (0, len(bufarr)):
+            self.arr[i] = bufarr[len(bufarr) - i]
+
     def Check(self):
         """checking data
         
