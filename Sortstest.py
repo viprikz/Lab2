@@ -1,4 +1,3 @@
-#import unittest   # The test framework
 class QuickSort(object):
     low = 0
     high = 0
@@ -132,13 +131,6 @@ class MergeSort(object) :
         else:
             print("wrong array")
 
-    def reverse(self):
-        """reverse list 
-        """
-        bufarr = self.arr
-        for i in range (0, len(bufarr)):
-            self.arr[i] = bufarr[len(bufarr) - i]
-
     def CountBigO(self):
         return("n * log2(n)")
     
@@ -199,12 +191,6 @@ class RadixSort(object):
         else:
             print("wrong array")
 
-    def reverse(self):
-        """reverse array
-        """
-        bufarr = self.arr
-        for i in range (0, len(bufarr)):
-            self.arr[i] = bufarr[len(bufarr) - i]
 
     def CountBigO(self):
         return("n")
